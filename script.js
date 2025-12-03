@@ -77,3 +77,59 @@ function applyPcScale() {
 applyPcScale();
 window.addEventListener("resize", applyPcScale);
 
+function alignMobileCloseButtons() {
+  const chitandaPanel = document.querySelector(".m-panel-chitanda");
+  const contactPanel = document.querySelector(".m-panel-contact");
+
+  if (!chitandaPanel || !contactPanel) return;
+
+  // chitanda의 top 값 (예: -14px)
+  const chitandaTop = parseFloat(getComputedStyle(chitandaPanel).top);
+
+  // 화면 밖으로 나간 값 (예: 14)
+  const chitandaOffset = Math.abs(chitandaTop);
+
+  // contact의 닫기 버튼 요소
+  const contactClose = contactPanel.querySelector(".m-close");
+
+  // m-close 기본 위치 값 (px)
+  const baseCloseTop = 31;
+
+  // Somi 원하는 보정치: offset에서 2px 빼기
+  const adjustedOffset = chitandaOffset - 2;
+
+  // 최종 적용 값
+  contactClose.style.top = (baseCloseTop - adjustedOffset) + "px";
+}
+
+alignMobileCloseButtons();
+window.addEventListener("resize", alignMobileCloseButtons);
+function alignMobileCloseButtons() {
+  const chitandaPanel = document.querySelector(".m-panel-chitanda");
+  const contactPanel = document.querySelector(".m-panel-contact");
+
+  if (!chitandaPanel || !contactPanel) return;
+
+  // chitanda의 top 값 (예: -14px)
+  const chitandaTop = parseFloat(getComputedStyle(chitandaPanel).top);
+
+  // 화면 밖으로 나간 값 (예: 14)
+  const chitandaOffset = Math.abs(chitandaTop);
+
+  // contact의 닫기 버튼 요소
+  const contactClose = contactPanel.querySelector(".m-close");
+
+  // m-close 기본 위치 값 (px)
+  const baseCloseTop = 31;
+
+  // Somi 원하는 보정치: offset에서 2px 빼기
+  const adjustedOffset = chitandaOffset - 2;
+
+  // 최종 적용 값
+  contactClose.style.top = (baseCloseTop - adjustedOffset) + "px";
+}
+
+alignMobileCloseButtons();
+window.addEventListener("resize", alignMobileCloseButtons);
+
+
