@@ -117,14 +117,14 @@ html, body {
 .m-chitanda-text {
   left: calc(72 / 390 * 100vw);             
   /* top: calc(180 / 844 * 100vh);              */
-  bottom: calc(25 / 844 * 100vh);   
+  bottom: calc(25 / 844 * 100dvh);   
   top: auto;                         /* top 제거 */
 }
 
 .m-contact-text {
   left: calc(72 / 390 * 100vw);            
   /* top: calc(149 / 844 * 100vh);              */
-  bottom: calc(25 / 844 * 100vh);    
+  bottom: calc(25 / 844 * 100dvh);    
   top: auto;                         /* top 제거 */
 }
 
@@ -132,7 +132,7 @@ html, body {
 .m-close {
   position: absolute;
   left: calc(28 / 390 * 100vw);             /* 8.46vw */
-  top: calc(19 / 844 * 100vh);              /* 3.67vh */
+  top: calc(19 / 844 * 100dvh);              /* 3.67vh */
   font-family: "MissFajardose";
   font-size: 28px;
   letter-spacing: 10px;
