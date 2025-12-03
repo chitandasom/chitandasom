@@ -60,9 +60,10 @@ html, body {
 .m-item {
   font-family: "MissFajardose";
   font-size: 28px;                         /* 글자 px 유지 */
-  letter-spacing: 10px;
-  height: calc(47 / 844 * 100vh);          /* 5.56vh */
-  padding-left: calc(21 / 390 * 100vw);    /* 5.38vw */
+  letter-spacing: 4px;
+  height: calc(34 / 844 * 100vh);          /* 5.56vh */
+  padding-left: calc(26 / 390 * 100vw);    /* 5.38vw */
+  padding-top: calc(15.6 / 844 * 100vh);   /* 6px 대신 비율 적용 */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -88,13 +89,14 @@ html, body {
   height: calc(200 / 844 * 100vh);          /* 23.69vh */
 }
 
+
 /* 텍스트 공통 */
 .m-text {
   position: absolute;
   width: calc(320 / 390 * 100vw);          /* 82.05vw */
   font-family: "Noto Sans CJK KR", sans-serif;
   font-size: 10px;                          /* px 유지 */
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   line-height: 1.48;
   text-align: right;
   color: #000;
@@ -102,18 +104,18 @@ html, body {
 
 .m-chitanda-text {
   left: calc(72 / 390 * 100vw);             /* 18.46vw */
-  top: calc(171 / 844 * 100vh);             /* 20.26vh */
+  top: calc(180 / 844 * 100vh);             /* 20.26vh */
 }
 
 .m-contact-text {
   left: calc(72 / 390 * 100vw);            /* 65.12vw */
-  top: calc(157 / 844 * 100vh);             /* 18.60vh */
+  top: calc(149 / 844 * 100vh);             /* 18.60vh */
 }
 
 /* 모바일 X */
 .m-close {
   position: absolute;
-  left: calc(33 / 390 * 100vw);             /* 8.46vw */
+  left: calc(28 / 390 * 100vw);             /* 8.46vw */
   top: calc(31 / 844 * 100vh);              /* 3.67vh */
   font-family: "MissFajardose";
   font-size: 28px;
@@ -177,9 +179,10 @@ html, body {
   .w-item {
     font-family: "MissFajardose";
     font-size: 31px;
-    letter-spacing: 10px;
-    height: 47px;
+    letter-spacing: 4px;
+    height: 34px;
     padding-left: 21px;
+    padding-top: 15px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -241,14 +244,14 @@ html, body {
     width: 320px;
     font-family: "Noto Sans CJK KR", sans-serif;
     font-size: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     line-height: 1.48;
     text-align: right;
     color: #000;
   }
 
-  .w-chitanda-text { left: 196px; top: 157px; }
-  .w-contact-text  { left: 196px; top: 157px; }
+  .w-chitanda-text { left: 196px; top: 164px; }
+  .w-contact-text  { left: 196px; top: 162px; }
 }
 
 
@@ -257,4 +260,6 @@ a, a:visited, a:hover, a:active {
   color: #000;
   text-decoration: none;
 }
+
+
 
